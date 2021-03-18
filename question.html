@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="box" id="questionScreen">
+<div class="title">
+    online quiz Application
+</div>
+<div class="header">
+    <div class="scoreBox">Score:<span></span></div>
+    <div class="timerBox">Time left :<span></span></div>
+
+</div>
+<div class="questionBox">
+    Inside which HTML element do we put the JavaScript??
+</div>
+<div class="optionBox">
+    <span onclick="checkAnswer(this)" id="1"></span>
+    <span  onclick="checkAnswer(this)" id="2"></span>
+    <span  onclick="checkAnswer(this)" id="3"></span>
+    <span  onclick="checkAnswer(this)" id="4"></span>
+</div>
+<div class="footer">
+    <button onclick="showNext()">
+        Next
+    </button>
+    <button onclick="showResult(1)">
+        Show Result
+    </button>
+</div>
+    </div>
+
+    <div class="box" id="resultScreen" style="display:none">
+        <div class="title">
+            online quiz Result
+        </div>
+        <div class="resultBox">
+            <label>Questions:</label>
+            <span id="totalQuestion">10</span>
+            <label>Attempted:</label>
+            <span id="attemptedQuestion">0</span>
+            <label>correct:</label>
+            <span id="correctAnswer">0</span>
+            <label>wrong:</label>
+            <span id="wrongAnswer">0</span>
+        </div>
+        <div class="buttonBox">
+            <a href="index.html">Start again</a>
+        </div>
+    </div>
+
+   
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- <scrip src="js/quiz.js"></scrip> -->
+<script src="js/script.js"></script>
+</html>
